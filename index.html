@@ -37,31 +37,32 @@
             </nav>
         </header>
         <main class="flex">
-            <section id="hero">
+            <section class="flex" id="hero">
                 <div class="flex hero">
-                <div class="flex" id="hero-text">
-                    <h1 class="hero-main-text">This website is awesome</h1>
-                    <p class="hero-secondary-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur accusamus cumque, vitae aperiam veritatis alias exercitationem suscipit corporis praesentium amet blanditiis</p>
-                    <button>Sign up</button>
-                </div>
-                <!-- <img src="" alt="" class="image" id="hero-image"> -->
-                <div class="heroimg"></div>
+                    <div class="flex" id="hero-text">
+                        <h1 class="hero-main-text">This website is awesome</h1>
+                        <p class="hero-secondary-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur accusamus cumque, vitae aperiam veritatis alias exercitationem suscipit corporis praesentium amet blanditiis</p>
+                        <button>Sign up</button>
+                    </div>
+                    <!-- <img src="" alt="" class="image" id="hero-image"> -->
+                    <div class="heroimg"></div>
                 </div>
             </section>
             <section id="rand-img">
                 <h2 class="info-header">Some random information</h2>
                 <div class="flex rand-images">
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    
-                    <div class="break"></div>
-                    
-                    <p class="image-desc">Random1</p>
-                    <p class="image-desc">Random2</p>
-                    <p class="image-desc">Random3</p>
-                    <p class="image-desc">Random4</p>
+                    <div class="flex individ-img">
+                        <div class="box"></div>
+                        <p class="image-desc">Random image 1</p>
+                    </div>
+                    <div class="flex individ-img">
+                        <div class="box"></div>
+                        <p class="image-desc">Random image 2</p>
+                    </div>
+                    <div class="flex individ-img">
+                        <div class="box"></div>
+                        <p class="image-desc">Random image 3</p>
+                    </div>
                 </div>
             </section>
             <section class="flex" id="quote">
@@ -73,8 +74,10 @@
                 <p class="quote-attr">-Lorem, my boss</p>
             </section>
             <section class="flex" id="call-to-action">
-                <h3></h3>
-                <p></p>
+                <div class="flex cta-text">
+                    <h3 class="cta-text">Call to action!</h3>
+                    <p class="cta-text">Sign up for our product by clicking that button over there!</p>
+                </div>
                 <button class="call-to-action">Sign up</button>
             </section>
         </main>

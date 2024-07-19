@@ -4,8 +4,8 @@
     font-family: Roboto, sans-serif;
     color: #F9FAF8;
 }
-h1, p {
-    margin: 10px;
+h1 {
+    margin: 10px 0;
 }
 .flex {
     display: flex;
@@ -13,22 +13,29 @@ h1, p {
 .flex#wrapper, 
 .flex#hero-text, 
 main.flex,
-.flex#quote {
+.flex#quote,
+.flex.cta-text,
+.flex.individ-img {
     flex-direction: column;
 }
 header, #hero, footer {
     background-color: #1F2937;
 }
 button, #call-to-action {
-    background-color: #3882F6;
+    background-color: #3882f6;
+    border-radius: 10px;
 }
-.box, .logo, .heroimg, button, .image-desc {
+#call-to-action {
+    margin: 5vw auto;
+    padding: 50px;
+}
+.box, .logo, .heroimg, button {
     border: solid 3px #3882F6;
     border-radius: 7px;
 }
 .box {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    aspect-ratio: 1;
 }
 .logo {
     font-size: 24px;
@@ -41,8 +48,9 @@ button, #call-to-action {
     aspect-ratio: 2 / 1;
 }
 button {
-    padding: 5px 10px;
+    padding: 10px 20px;
     min-width: 90px;
+    font-weight: 600;
 }
 header, nav ul {
     list-style-type: none;
@@ -71,6 +79,8 @@ header a:hover {
 section#hero {
     padding: 75px 1vw;
     flex: 1;
+    justify-content: center;
+    align-items: center;
     word-wrap: break-word;
 }
 div.hero {
@@ -78,7 +88,6 @@ div.hero {
     gap: 50px;
     align-items: center;
     justify-content: center;
-    margin: auto;
 }
 .flex#hero-text {
     flex: 1 1 auto;
@@ -88,6 +97,9 @@ div.hero {
 }
 #rand-img {
     padding: 50px;
+}
+.flex.individ-img {
+    justify-content: center;
 }
 .info-header {
     font-size: 36px;
@@ -107,13 +119,13 @@ div.hero {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 5px 25px;
+    gap: 5px 40px;
 }
 .flex#quote {
     justify-content: center;
     align-items: flex-end;
     background-color: #E5E7EB;
-    padding: 75px 18vw;
+    padding: 75px 20vw;
 }
 #quote > blockquote {
     color: #1F2937;
@@ -126,6 +138,27 @@ div.hero {
     color: #1F2937;
     font-size: 24px;
     font-weight: 700;
+}
+.flex#call-to-action {
+    gap: 50px;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 60%;
+}
+.flex.cta-text {
+    justify-content: center;
+}
+h3.cta-text {
+    font-size: 24px;
+    margin-bottom: 0;
+}
+p.cta-text {
+    margin-top: 5px;
+}
+button.call-to-action {
+    border-color: #F9FAF8;
+    padding: 10px 20px;
+    align-self: center;
 }
 footer {
     justify-content: center;
