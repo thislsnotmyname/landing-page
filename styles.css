@@ -10,7 +10,10 @@ h1, p {
 .flex {
     display: flex;
 }
-.flex#wrapper, .flex#hero-text, main.flex {
+.flex#wrapper, 
+.flex#hero-text, 
+main.flex,
+.flex#quote {
     flex-direction: column;
 }
 header, #hero, footer {
@@ -19,7 +22,7 @@ header, #hero, footer {
 button, #call-to-action {
     background-color: #3882F6;
 }
-.box, .logo, .heroimg, button {
+.box, .logo, .heroimg, button, .image-desc {
     border: solid 3px #3882F6;
     border-radius: 7px;
 }
@@ -66,7 +69,7 @@ header a:hover {
     font-weight: 800;
 }
 section#hero {
-    padding: 100px;
+    padding: 75px 1vw;
     flex: 1;
     word-wrap: break-word;
 }
@@ -82,4 +85,50 @@ div.hero {
     justify-content: space-around;
     align-items: baseline;
     flex-wrap: wrap;
+}
+#rand-img {
+    padding: 50px;
+}
+.info-header {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
+    text-align: center;
+    margin-top: 0;
+}
+.image-desc {
+    color: rgba(31, 41, 55, 0.95);
+}
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+.flex.rand-images {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px 25px;
+}
+.flex#quote {
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #E5E7EB;
+    padding: 75px 18vw;
+}
+#quote > blockquote {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: -10px;
+}
+.quote-attr {
+    color: #1F2937;
+    font-size: 24px;
+    font-weight: 700;
+}
+footer {
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
 }
