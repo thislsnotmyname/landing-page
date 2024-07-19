@@ -1,4 +1,85 @@
-/* JM, 07/17/2024 */
+/* JM, 07/18/2024 */
 * {
     box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    color: #F9FAF8;
+}
+h1, p {
+    margin: 10px;
+}
+.flex {
+    display: flex;
+}
+.flex#wrapper, .flex#hero-text, main.flex {
+    flex-direction: column;
+}
+header, #hero, footer {
+    background-color: #1F2937;
+}
+button, #call-to-action {
+    background-color: #3882F6;
+}
+.box, .logo, .heroimg, button {
+    border: solid 3px #3882F6;
+    border-radius: 7px;
+}
+.box {
+    width: 100px;
+    height: 100px;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px;
+}
+.heroimg {
+    flex: 125%;
+    align-self: center;
+    aspect-ratio: 2 / 1;
+}
+button {
+    padding: 5px 10px;
+    min-width: 90px;
+}
+header, nav ul {
+    list-style-type: none;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+header a {
+    text-decoration: none;
+}
+header a:hover {
+    text-decoration: underline;
+}
+.nav {
+    margin-left: auto;
+}
+.nav-link, .hero-secondary-text {
+    color: #E5E7EB;
+    font-size: 18px;
+    font-weight: 300;
+}
+.hero-main-text {
+    font-size: 48px;
+    font-weight: 800;
+}
+section#hero {
+    padding: 100px;
+    flex: 1;
+    word-wrap: break-word;
+}
+div.hero {
+    width: 70%;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.flex#hero-text {
+    flex: 1 1 auto;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
 }
