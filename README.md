@@ -13,5 +13,7 @@ Credits:
 * Solar Technician Installing Solar Panel by [Los Muertos Crew](https://www.pexels.com/photo/solar-technician-installing-solar-panel-8853507/) on Pexels
 
 (The last three images were edited to have the first image's man's face in them.)
-   
+
+All Pexels images licensed under [Pexels's license](https://www.pexels.com/license/).
+
 > JM
