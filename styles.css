@@ -19,7 +19,7 @@ main.flex,
     flex-direction: column;
 }
 header, #hero, footer {
-    background-color: #1F2937;
+    background-color: #0A3161;
 }
 button, #call-to-action {
     background-color: #3882f6;
@@ -29,12 +29,12 @@ button, #call-to-action {
     margin: 5vw auto;
     padding: 50px;
 }
-.box, .logo, .heroimg, button {
+.box, .logo, .image, button {
     border: solid 3px #3882F6;
     border-radius: 7px;
 }
-.box {
-    width: 150px;
+.box, img.rand-img {
+    max-width: 300px;
     aspect-ratio: 1;
 }
 .logo {
@@ -42,10 +42,11 @@ button, #call-to-action {
     font-weight: bold;
     padding: 5px;
 }
-.heroimg {
+.heroimg, #hero-image {
     flex: 125%;
     align-self: center;
-    aspect-ratio: 2 / 1;
+    max-width: 450px;
+    aspect-ratio: 1;
 }
 button {
     padding: 10px 20px;
@@ -100,6 +101,8 @@ div.hero {
 }
 .flex.individ-img {
     justify-content: center;
+    max-width: 300px;
+    text-align: justify;
 }
 .info-header {
     font-size: 36px;
@@ -110,6 +113,7 @@ div.hero {
 }
 .image-desc {
     color: rgba(31, 41, 55, 0.95);
+    display: block;
 }
 .break {
     flex-basis: 100%;
@@ -118,7 +122,7 @@ div.hero {
 .flex.rand-images {
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 5px 40px;
 }
 .flex#quote {
