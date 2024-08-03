@@ -4,6 +4,9 @@
     font-family: Roboto, sans-serif;
     color: #F9FAF8;
 }
+body {
+    margin: 0;
+}
 h1 {
     margin: 10px 0;
 }
